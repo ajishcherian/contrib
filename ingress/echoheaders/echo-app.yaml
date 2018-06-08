@@ -27,6 +27,6 @@ spec:
     spec:
       containers:
       - name: echoheaders
-        image: k8s.gcr.io/echoserver:1.4
+        image: 987529168231.dkr.ecr.us-west-2.amazonaws.com/docker_image:$BUILD_NUMBER
         ports:
         - containerPort: 8080
