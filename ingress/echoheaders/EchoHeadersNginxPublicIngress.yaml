@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: angular-public
+  name: echoheaders-public
   annotations:
     kubernetes.io/ingress.class: "nginx-public"
 spec:
