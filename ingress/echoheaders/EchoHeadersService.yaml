@@ -4,7 +4,8 @@ metadata:
   name: echoheaders
 spec:
   ports:
-  - port: 80
-  targetPort: 8080
+  - protocol: TCP
+    port: 80
+    targetPort: 9376
   selector:
     app: echoheaders
