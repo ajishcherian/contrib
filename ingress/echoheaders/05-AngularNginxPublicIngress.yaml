@@ -15,5 +15,5 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: angular
+          serviceName: echoheaders
           servicePort: 80
