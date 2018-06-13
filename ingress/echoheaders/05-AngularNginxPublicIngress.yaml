@@ -10,10 +10,10 @@ spec:
     hosts:
     - [[PUBLIC_KUB_ENDPOINT]]
   rules:
-  - host: [[PUBLIC_KUB_ENDPOINT]]
+  - host: endpointrvs.com
     http: 
       paths:
-      - path: /
+      - path: /echoheaders
         backend:
           serviceName: echoheaders
           servicePort: 80
