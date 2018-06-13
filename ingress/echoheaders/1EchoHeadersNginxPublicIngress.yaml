@@ -5,12 +5,8 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: "nginx-public"
 spec:
-  tls:
-  - secretName: tls-key
-    hosts:
-    - [[PUBLIC_KUB_ENDPOINT]]
   rules:
-  - host: [[endpointrvs.com]]
+  - host: endpointrvs.com
     http: 
       paths:
       - path: /echoheaders
