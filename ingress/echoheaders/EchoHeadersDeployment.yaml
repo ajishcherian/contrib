@@ -15,26 +15,5 @@ spec:
       containers:
       - name: static-file-builder
         image: 987529168231.dkr.ecr.us-west-2.amazonaws.com/docker_image:latest
-        env:
-          - name: nginx-server
-            valueFrom:
-              fieldRef:
-                fieldPath: metadata.name
-          - name: POD_NAMESPACE
-            valueFrom:
-              fieldRef:
-                fieldPath: metadata.namespace
         ports:
         - containerPort: 8080
-        envFrom:
-        - configMapRef:
-           name: static
-      initContainers:
-      - name: static-file-builder
-        image: 987529168231.dkr.ecr.us-west-2.amazonaws.com/docker_image:latest
-        envFrom:
-        - configMapRef:
-           name: config
-        volumeMounts:
-        - name: shared-data
-          mountPath: /shared-volume
