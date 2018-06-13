@@ -10,7 +10,7 @@ spec:
     hosts:
     - [[PUBLIC_KUB_ENDPOINT]]
   rules:
-  - host: endpointrvs.com
+  - host: [[endpointrvs.com]]
     http: 
       paths:
       - path: /echoheaders
