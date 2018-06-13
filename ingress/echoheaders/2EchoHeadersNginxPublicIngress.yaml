@@ -6,7 +6,7 @@ metadata:
     kubernetes.io/ingress.class: "nginx-public"
 spec:
   rules:
-  - host: 10.111.139.159
+  - host: rvswebsite.com
     http: 
       paths:
       - path: /echoheaders
