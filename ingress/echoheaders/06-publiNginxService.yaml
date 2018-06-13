@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ajish-public
-  namespace: ajish-public-ingress
+  name: aj-nginx-public
+  namespace: aj-nginx-public-ingress
 spec:
   type: LoadBalancer
   ports:
@@ -11,5 +11,5 @@ spec:
   - port: 443
     name: https
   selector:
-    app: ajish-public
+    app: aj-nginx-public
 
