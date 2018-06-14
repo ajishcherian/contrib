@@ -1,19 +1,13 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: angular-public
-  annotations:
-    kubernetes.io/ingress.class: "nginx-public"
+  name: kubernetdemo-public
 spec:
-  tls:
-  - secretName: tls-key
-    hosts:
-    - [[PUBLIC_KUB_ENDPOINT]]
   rules:
-  - host: [[PUBLIC_KUB_ENDPOINT]]
+  - host: afb59d7d96f1d11e8a3a00255995eb89-1717703683.us-west-2.elb.amazonaws.com
     http: 
       paths:
-      - path: /
+      - path: /kubernetdemo
         backend:
-          serviceName: angular
+          serviceName: kubernetdemo
           servicePort: 80
