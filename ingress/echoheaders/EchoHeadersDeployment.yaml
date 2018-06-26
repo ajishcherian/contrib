@@ -14,6 +14,6 @@ spec:
         emptyDir: {}
       containers:
       - name: static-file-builder
-        image: 987529168231.dkr.ecr.us-west-2.amazonaws.com/docker_image:latest
+        image: 987529168231.dkr.ecr.us-west-2.amazonaws.com/echoheaders-image:latest
         ports:
         - containerPort: 8080
